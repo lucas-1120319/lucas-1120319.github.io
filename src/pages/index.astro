@@ -1,7 +1,3 @@
----
-
----
-
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -9,9 +5,108 @@
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<link rel="stylesheet" href="/src/styles/main.css" />
+		<title>Lucas Vermeulen</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+	    <div id="container">
+	        <div id="header">
+                <h1>
+                    Gedreven Back-end & Full-stack Developer met een sterke MBO- en HBO-basis.<br>
+                    Met ervaring in diverse programmeertalen werk ik probleemoplossend, kwaliteitsgericht en flexibel.<br>
+                     Als echte teamspeler ontwikkel ik binnen Scrum-projecten visueel en functioneel sterke oplossingen.
+                 </h1>
+            </div>
+            <div id="content">
+                <div id="ProgramLanguages">
+                     <h2>Programmeertalen:</h2>
+                     <ul>
+                        <li>C#</li>
+                        <li>Python</li>
+                        <li>Flask</li>
+                        <li>React</li>
+                        <li>Vue.js</li>
+                        <li>Html/css</li>
+                        <li>Javascript</li>
+                        <li>Blazor</li>
+                        <li>Laravel</li>
+                        <li>PHP</li>
+                        <li>.NET</li>
+                     </ul>
+                </div>
+                <div id="Skills">
+                     <h2>Skills:</h2>
+                     <ul>
+                        <li>Git</li>
+                        <li>DevOps</li>
+                        <li>Scrum</li>
+                     </ul>
+                </div>
+                <div id="Schools">
+                     <h2>Opleidingen:</h2>
+                     <ul>
+                        <li>MBO software development</li>
+                        <li>HBO AD software developer</li>
+                     </ul>
+                </div>
+                <div id="Intership">
+                    <h2>Stages:</h2>
+                    <ul>
+                        <li>Garansys</li>
+                        <li>Moogue</li>
+                     </ul>
+                </div>
+
+                <!-- The info for this collapsible: https://www.w3schools.com/howto/howto_js_collapsible.asp -->
+                <div id="SellingPoints">
+                    <button type="button" class="collapsible_button">Communicatieve Back-End Developer met een Klantgerichte Blik:</button>
+                    <div class="content">
+                        <p>
+                            Geen 'stille developer in een hoekje'.
+                            Dankzij 5 jaar ervaring aan de balie en in de verkoop bij Gamma kan ik niet alleen complexe back-end systemen bouwen,
+                            maar ook helder communiceren met klanten en het team. Ik vertaal technische uitdagingen moeiteloos naar begrijpelijke oplossingen.
+                        </p>
+                    </div>
+
+
+                    <button type="button" class="collapsible_button">Praktische Probleemoplosser met MBO-Fundament & HBO-Niveau:</button>
+                    <div class="content">
+                        <p>
+                            Met zowel een MBO-3 software developer achtergrond als een HBO-AD opleiding combineer ik een no-nonsense,
+                            'doen-en-leren' mentaliteit met een sterke analytische blik.
+                            Ik hou van uitdagingen: geef mij een complexe bug of een vaag idee, en ik ontrafel het tot een strak, werkend stappenplan.
+                        </p>
+                    </div>
+
+                    <button type="button" class="collapsible_button">Sociaal & Extrovert in Scrum- / DevOps-Teams:</button>
+                    <div class="content">
+                        <p>
+                            Software bouw je samen. Als extroverte ontwikkelaar krijg ik energie van goede Scrum-standups,
+                            visuele brainstorms en sparren met teamgenoten.
+                            Ik werk het liefst zelfstandig aan mijn eigen taken binnen een hecht team waarin we kennis delen en elkaar scherp houden.
+                        </p>
+                    </div>
+
+                <script>
+                    //this script gets the collapsible buttons and adds an event listener to each one.
+                    //When a button is clicked, it toggles the "active" class and shows or hides the associated content.
+                    var coll = document.getElementsByClassName("collapsible_button");
+                    var i;
+
+                    for (i = 0; i < coll.length; i++) {
+                      coll[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.display === "block") {
+                          content.style.display = "none";
+                        } else {
+                          content.style.display = "block";
+                        }
+                      });
+                    }
+                    </script>
+                </div>
+            </div>
+         </div>
 	</body>
 </html>
