@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="stylesheet" href="/src/styles/main.css" />
+		<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
 		<title>Lucas Vermeulen</title>
 	</head>
 	<body>
@@ -20,19 +22,37 @@
             <div id="content">
                 <div id="ProgramLanguages">
                      <h2>Programmeertalen:</h2>
-                     <ul>
-                        <li>C#</li>
-                        <li>Python</li>
-                        <li>Flask</li>
-                        <li>React</li>
-                        <li>Vue.js</li>
-                        <li>Html/css</li>
-                        <li>Javascript</li>
-                        <li>Blazor</li>
-                        <li>Laravel</li>
-                        <li>PHP</li>
-                        <li>.NET</li>
-                     </ul>
+                     <div class="marquee-wrapper">
+                          <div class="marquee-track">
+                            <!-- Set 1 -->
+                            <div class="tech-item" title="C#"><i class="devicon-csharp-plain"></i></div>
+                            <div class="tech-item" title="Python"><i class="devicon-python-plain"></i></div>
+                            <div class="tech-item" title="Flask"><i class="devicon-flask-original"></i></div>
+                            <div class="tech-item" title="React"><i class="devicon-react-original"></i></div>
+                            <div class="tech-item" title="Vue.js"><i class="devicon-vuejs-plain"></i></div>
+                            <div class="tech-item" title="HTML5"><i class="devicon-html5-plain"></i></div>
+                            <div class="tech-item" title="CSS3"><i class="devicon-css3-plain"></i></div>
+                            <div class="tech-item" title="JavaScript"><i class="devicon-javascript-plain"></i></div>
+                            <div class="tech-item" title="Blazor"><i class="devicon-blazor-original"></i></div>
+                            <div class="tech-item" title="Laravel"><i class="devicon-laravel-original"></i></div>
+                            <div class="tech-item" title="PHP"><i class="devicon-php-plain"></i></div>
+                            <div class="tech-item" title="NET"><i class="devicon-dotnetcore-plain"></i></div>
+
+                            <!-- Set 2 (Duplicaat voor naadloze weergave) -->
+                            <div class="tech-item" title="C#"><i class="devicon-csharp-plain"></i></div>
+                            <div class="tech-item" title="Python"><i class="devicon-python-plain"></i></div>
+                            <div class="tech-item" title="Flask"><i class="devicon-flask-original"></i></div>
+                            <div class="tech-item" title="React"><i class="devicon-react-original"></i></div>
+                            <div class="tech-item" title="Vue.js"><i class="devicon-vuejs-plain"></i></div>
+                            <div class="tech-item" title="HTML5"><i class="devicon-html5-plain"></i></div>
+                            <div class="tech-item" title="CSS3"><i class="devicon-css3-plain"></i></div>
+                            <div class="tech-item" title="JavaScript"><i class="devicon-javascript-plain"></i></div>
+                            <div class="tech-item" title="Blazor"><i class="devicon-blazor-original"></i></div>
+                            <div class="tech-item" title="Laravel"><i class="devicon-laravel-original"></i></div>
+                            <div class="tech-item" title="PHP"><i class="devicon-php-plain"></i></div>
+                            <div class="tech-item" title="NET"><i class="devicon-dotnetcore-plain"></i></div>
+                          </div>
+                        </div>
                 </div>
                 <div id="Skills">
                      <h2>Skills:</h2>
@@ -59,32 +79,36 @@
 
                 <!-- The info for this collapsible: https://www.w3schools.com/howto/howto_js_collapsible.asp -->
                 <div id="SellingPoints">
-                    <button type="button" class="collapsible_button">Communicatieve Back-End Developer met een Klantgerichte Blik:</button>
-                    <div class="content">
-                        <p>
-                            Geen 'stille developer in een hoekje'.
-                            Dankzij 5 jaar ervaring aan de balie en in de verkoop bij Gamma kan ik niet alleen complexe back-end systemen bouwen,
-                            maar ook helder communiceren met klanten en het team. Ik vertaal technische uitdagingen moeiteloos naar begrijpelijke oplossingen.
-                        </p>
+                    <div class="SellingPointsContent">
+                        <button type="button" class="collapsible_button">Communicatieve Back-End Developer met een Klantgerichte Blik:</button>
+                        <div class="content">
+                            <p>
+                                Geen 'stille developer in een hoekje'.
+                                Dankzij 5 jaar ervaring aan de balie en in de verkoop bij Gamma kan ik niet alleen complexe back-end systemen bouwen,
+                                maar ook helder communiceren met klanten en het team. Ik vertaal technische uitdagingen moeiteloos naar begrijpelijke oplossingen.
+                            </p>
+                        </div>
                     </div>
 
-
-                    <button type="button" class="collapsible_button">Praktische Probleemoplosser met MBO-Fundament & HBO-Niveau:</button>
-                    <div class="content">
-                        <p>
-                            Met zowel een MBO-3 software developer achtergrond als een HBO-AD opleiding combineer ik een no-nonsense,
-                            'doen-en-leren' mentaliteit met een sterke analytische blik.
-                            Ik hou van uitdagingen: geef mij een complexe bug of een vaag idee, en ik ontrafel het tot een strak, werkend stappenplan.
-                        </p>
+                    <div class="SellingPointsContent">
+                        <button type="button" class="collapsible_button">Praktische Probleemoplosser met MBO-Fundament & HBO-Niveau:</button>
+                        <div class="content">
+                            <p>
+                                Met zowel een MBO-3 software developer achtergrond als een HBO-AD opleiding combineer ik een no-nonsense,
+                                'doen-en-leren' mentaliteit met een sterke analytische blik.
+                                Ik hou van uitdagingen: geef mij een complexe bug of een vaag idee, en ik ontrafel het tot een strak, werkend stappenplan.
+                            </p>
+                        </div>
                     </div>
-
-                    <button type="button" class="collapsible_button">Sociaal & Extrovert in Scrum- / DevOps-Teams:</button>
-                    <div class="content">
-                        <p>
-                            Software bouw je samen. Als extroverte ontwikkelaar krijg ik energie van goede Scrum-standups,
-                            visuele brainstorms en sparren met teamgenoten.
-                            Ik werk het liefst zelfstandig aan mijn eigen taken binnen een hecht team waarin we kennis delen en elkaar scherp houden.
-                        </p>
+                    <div class="SellingPointsContent">
+                        <button type="button" class="collapsible_button">Sociaal & Extrovert in Scrum- / DevOps-Teams:</button>
+                        <div class="content">
+                            <p>
+                                Software bouw je samen. Als extroverte ontwikkelaar krijg ik energie van goede Scrum-standups,
+                                visuele brainstorms en sparren met teamgenoten.
+                                Ik werk het liefst zelfstandig aan mijn eigen taken binnen een hecht team waarin we kennis delen en elkaar scherp houden.
+                            </p>
+                        </div>
                     </div>
 
                 <script>
