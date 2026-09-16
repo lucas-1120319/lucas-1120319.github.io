@@ -11,8 +11,23 @@
 #container{
     width: 100%;
     height: 100vh;
+    overflow-x: hidden;
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
+}
+#headerContainer{
+    height: 500px;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+#header h1{
+    font-size: 1.5rem;
 }
 
 
@@ -87,6 +102,21 @@
   }
 }
 
+#content{
+    display: flex;
+    margin-top: 6rem;
+}
+
+/*  Add padding to all textual content sections below the marquee */
+#Skills,
+#Schools,
+#Intership,
+#SellingPoints {
+    padding: 0 6rem 0 6rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 
 #SellingPoints{
     width: 250px;
@@ -125,4 +155,140 @@
   display: none;
   overflow: hidden;
   background-color: var(--main-bg-color);
+}
+
+
+
+
+
+.timeline-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Timeline Container */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+/* Center Vertical Line */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #007bff;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Titles placed directly on/in the line */
+.timeline-header {
+    position: relative;
+    z-index: 3;
+    width: fit-content;
+    margin: 30px auto 15px auto;
+    padding: 6px 16px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+/* Timeline Item Container */
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.timeline-item.left {
+    left: 0;
+    text-align: right;
+}
+
+.timeline-item.right {
+    left: 50%;
+    text-align: left;
+}
+
+/* Perfectly Centered Dots */
+.timeline-dot {
+    position: absolute;
+    top: 25px;
+    width: 14px;
+    height: 14px;
+    background-color: #ffffff;
+    border: 3px solid #007bff;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.timeline-item.left .timeline-dot {
+    right: -10px;
+}
+
+.timeline-item.right .timeline-dot {
+    left: -10px;
+}
+
+/* Content Box Styling */
+.timeline-content {
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    display: inline-block;
+    max-width: 100%;
+}
+
+.timeline-content p {
+    margin: 0 0 12px 0;
+    line-height: 1.5;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* --- Badges Styling --- */
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+/* Align badges based on card side */
+.timeline-item.left .badges {
+    justify-content: flex-end;
+}
+
+.timeline-item.right .badges {
+    justify-content: flex-start;
+}
+
+.badge {
+    background-color: #e3f2fd;
+    color: #0d47a1;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 12px;
+    border: 1px solid #bbdefb;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 600px) {
+    .timeline-header {
+        font-size: 0.85rem;
+        padding: 5px 12px;
+    }
 }
