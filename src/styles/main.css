@@ -127,8 +127,8 @@ font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    gap: 10px;
-
+    gap: 100px;
+    justify-content: space-between;
 
 }
 
@@ -307,4 +307,17 @@ font-family: Arial, sans-serif;
     #content{
         flex-direction: column-reverse;
     }
+}
+
+
+
+#projectContainer{
+
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 40px;
 }
