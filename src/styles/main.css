@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-
+font-family: Arial, sans-serif;
 }
 :root {
   --main-bg-color: #fff;
@@ -119,7 +119,7 @@
 
 
 #SellingPoints{
-    width: 250px;
+    max-width: 450px;
     height: 100%;
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
@@ -127,11 +127,14 @@
     flex-direction: column;
     flex-wrap: nowrap;
     gap: 10px;
+
+
 }
 
 
 .SellingPointsContent{
-    border: 1px solid blue;
+    border-left: 1px solid #007bff;
+    overflow: auto;
 }
 
 .collapsible_button {
@@ -143,7 +146,7 @@
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 .active, .collapsible:hover {
@@ -155,6 +158,7 @@
   display: none;
   overflow: hidden;
   background-color: var(--main-bg-color);
+  font-size: 0.95rem;
 }
 
 
@@ -165,7 +169,6 @@
     max-width: 900px;
     margin: 40px auto;
     padding: 0 20px;
-    font-family: Arial, sans-serif;
 }
 
 /* Timeline Container */
