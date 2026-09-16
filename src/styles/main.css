@@ -105,6 +105,7 @@ font-family: Arial, sans-serif;
 #content{
     display: flex;
     margin-top: 6rem;
+    flex-direction: row;
 }
 
 /*  Add padding to all textual content sections below the marquee */
@@ -183,11 +184,19 @@ font-family: Arial, sans-serif;
     position: absolute;
     width: 4px;
     background-color: #007bff;
-    top: 0;
+    top: 100px;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+}
+
+.timeline-top-header{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+
 }
 
 /* Titles placed directly on/in the line */
@@ -293,5 +302,9 @@ font-family: Arial, sans-serif;
     .timeline-header {
         font-size: 0.85rem;
         padding: 5px 12px;
+    }
+
+    #content{
+        flex-direction: column-reverse;
     }
 }
